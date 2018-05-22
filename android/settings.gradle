@@ -1,0 +1,3 @@
+rootProject.name = 'bringupApp1'
+
+include ':app'
