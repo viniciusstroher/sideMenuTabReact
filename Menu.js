@@ -24,7 +24,11 @@ export default class Menu extends React.Component {
         tapToClose={true}
         onClose={ () => {this.setState({open: false,aberto:false})} }
         content={ this.state.aberto ? <View><Text>ae</Text></View> : null }
-        >
+        negotiatePan={true}
+        captureGestures={true}
+        panOpenMask={0.5}
+        side={'left'}
+        > 
         <View>
           <Text>owwi</Text>
           <Button onPress={() => {this.openControlPanel()}} title="abre"/>

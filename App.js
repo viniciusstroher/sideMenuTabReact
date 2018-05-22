@@ -20,17 +20,18 @@ class SettingsScreen extends React.Component {
   render() {
     return [<Menu/>];
   }
-}
+} 
 
 export default Tab = TabNavigator({
-  Home: { screen: HomeScreen },
   Settings: { screen: SettingsScreen },
+  Home: { screen: HomeScreen },
+  
 },{
   navigationOptions: {tabBarVisible:false}
 });
 
 
-// export default Menu; 
+// export default Menu;  
  // export default All.MyApp;
 
 // export const Router = StackNavigator({
