@@ -6,11 +6,11 @@ export default class Menu extends React.Component {
  
   constructor(props) {
     super(props);
-    this.state = {open: false};
+    this.state = {open: false,aberto:false};
   }
 
   openControlPanel = () => {
-    this.setState({open: true});
+    this.setState({open: true,aberto:true});
   };
   
   render () {
@@ -22,8 +22,8 @@ export default class Menu extends React.Component {
         open={this.state.open}
         openDrawerOffset={100}
         tapToClose={true}
-
-        content={<View><Text>ae</Text></View>}
+        onClose={ () => {this.setState({open: false,aberto:false})} }
+        content={ this.state.aberto ? <View><Text>ae</Text></View> : null }
         >
         <View>
           <Text>owwi</Text>
