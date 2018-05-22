@@ -6,6 +6,7 @@ export default class Menu extends React.Component {
  
   constructor(props) {
     super(props);
+    console.log(props)
     this.state = {open: false,aberto:false};
   }
 
@@ -37,9 +38,10 @@ export default class Menu extends React.Component {
         <View>
           <Text>owwi</Text>
           <Button onPress={() => {this.openControlPanel()}} title="abre"/>
+          <Button onPress={() => {this.props.navigation.navigate('Home')}} title="abre"/>
         </View>
       </Drawer>
     )
-  }
-
+  } 
+ 
 }
