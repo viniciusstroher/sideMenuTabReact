@@ -13,6 +13,10 @@ export default class Menu extends React.Component {
     this.setState({open: true,aberto:true});
   };
   
+  componentDidUpdate(prevProps, prevState){
+      console.log(prevProps,prevState);
+  }
+ 
   render () {
     return (
       <Drawer
@@ -22,13 +26,14 @@ export default class Menu extends React.Component {
         open={this.state.open}
         openDrawerOffset={100}
         tapToClose={true}
+        onOpen={ () => {this.setState({open: true,aberto:true})} }
         onClose={ () => {this.setState({open: false,aberto:false})} }
         content={ this.state.aberto ? <View><Text>ae</Text></View> : null }
         negotiatePan={true}
         captureGestures={true}
         panOpenMask={0.5}
         side={'left'}
-        > 
+        >  
         <View>
           <Text>owwi</Text>
           <Button onPress={() => {this.openControlPanel()}} title="abre"/>
