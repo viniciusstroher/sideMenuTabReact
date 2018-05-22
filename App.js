@@ -25,6 +25,8 @@ class SettingsScreen extends React.Component {
 export default Tab = TabNavigator({
   Home: { screen: HomeScreen },
   Settings: { screen: SettingsScreen },
+},{
+  navigationOptions: {tabBarVisible:false}
 });
 
 
