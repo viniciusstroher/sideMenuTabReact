@@ -19,6 +19,7 @@ export default class Menu extends React.Component {
   }
  
   render () {
+    const { navigation } = this.props;
     return (
       <Drawer
         ref="drawer"

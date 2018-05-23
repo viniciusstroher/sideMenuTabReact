@@ -20,7 +20,7 @@ class HomeScreen extends React.Component {
 class SettingsScreen extends React.Component {
   render() {
     const { navigation } = this.props;
-    return (<Menu/>);
+    return (<Menu navigation={navigation}/>);
   }
 } 
 
