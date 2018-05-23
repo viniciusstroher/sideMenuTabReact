@@ -18,7 +18,7 @@ class HomeScreen extends React.Component {
 
 class SettingsScreen extends React.Component {
   render() {
-    return ];
+    return [<Menu/>];
   }
 } 
 
