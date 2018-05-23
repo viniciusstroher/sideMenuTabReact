@@ -8,6 +8,7 @@ import Menu from './Menu';
 
 class HomeScreen extends React.Component {
   render() {
+    const { navigation } = this.props;
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
         <Text>Home!</Text>
@@ -18,12 +19,13 @@ class HomeScreen extends React.Component {
 
 class SettingsScreen extends React.Component {
   render() {
-    return <Menu/>;
+    const { navigation } = this.props;
+    return (<Menu/>);
   }
 } 
 
 export default Tab = TabNavigator({
-  Settings: { screen: Menu },
+  Settings: { screen: SettingsScreen },
   Home: { screen: HomeScreen },
   
 },{
