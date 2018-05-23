@@ -26,15 +26,13 @@ class SettingsScreen extends React.Component {
 
 export default Tab = TabNavigator({
   Settings: { screen: SettingsScreen },
-  Home: { screen: HomeScreen },
-  
+  Home:     { screen: HomeScreen },
 },{
   navigationOptions: {tabBarVisible:false,swipeEnabled:false}
 });
 
-
 // export default Menu;  
- // export default All.MyApp;
+// export default All.MyApp;
 
 // export const Router = StackNavigator({
 //     Inicio: {
