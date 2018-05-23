@@ -2,7 +2,7 @@ import Drawer from 'react-native-drawer';
 import React  from 'react';
 import { Text, View,Button } from 'react-native';
 
-export default class Menu extends React.Component {  
+export class Menu extends React.Component {  
  
   constructor(props) {
     super(props);

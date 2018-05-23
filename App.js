@@ -23,7 +23,7 @@ class SettingsScreen extends React.Component {
 } 
 
 export default Tab = TabNavigator({
-  Settings: { screen: <Menu/> },
+  Settings: { screen: Menu },
   Home: { screen: HomeScreen },
   
 },{
