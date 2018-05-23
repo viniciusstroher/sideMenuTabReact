@@ -33,7 +33,7 @@ export default class Menu extends React.Component {
         negotiatePan={true}
         captureGestures={true}
         panOpenMask={0.5}
-        side={'right'}
+        side={'left'}
         >  
         <View>
           <Text>owwi</Text>
