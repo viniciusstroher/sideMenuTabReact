@@ -29,7 +29,7 @@ export default Tab = TabNavigator({
   Home: { screen: HomeScreen },
   
 },{
-  navigationOptions: {tabBarVisible:false}
+  navigationOptions: {tabBarVisible:false,swipeEnabled:false}
 });
 
 
